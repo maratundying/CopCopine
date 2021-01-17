@@ -62,10 +62,9 @@ jQuery(document).ready(function($) {
     			'background-color': 'white !important',
     		});
 
-    		$("#email_submit_button").css({
-    			'border': '1px solid red',
-    			'background-color': 'white !important',
-    		})
+    		$("#email_submit_button").removeAttr('style')
+
+    		$("#email_submit_button").css('color','red')
     	}
 	})
 

@@ -31,19 +31,20 @@ ul li{
 	border:none;
 	display: flex;
 	flex-direction: column;
-	padding:0px 15px ;
+	padding:0px 40px 0 30px;
 	box-shadow: 0px 4px 4px #00000029;
 }
 
 #header_wrapper{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 	padding-bottom: 10px;
 	border-bottom: 1px solid lightgrey
 }
 
 #header_wrapper>*{
 	display: flex;
+	
 }
 
 #header_wrapper_number{
@@ -61,7 +62,7 @@ ul li{
 }
 
 #header_wrapper_icons>*{
-	padding: 0 10px;
+	padding: 2px 10px 0px 15px;
 	cursor: pointer;
 }
 
@@ -109,7 +110,7 @@ ul li{
 }
 
 #header_menu ul li:not(:first-child){
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
 /*-------------------END HEADER SIDE -----------------*/
@@ -157,8 +158,9 @@ ul li{
 	border-bottom-left-radius: 10px;
 	border:1px solid #CDC3B3;
 	outline: none;
-	padding:5px;
-	width:200px;
+	padding:0 5px;
+	width:250px;
+	height:33px;
 	margin-top: 10px;
 }
 
@@ -189,9 +191,10 @@ ul li{
 	border:none;
 	background-color: white;
 	position: absolute;
-	right:-26px;
+	right:-35px;
 	top:10px;
-	padding:5px;
+	height:35px;
+	width:40px;
 	border: 1px solid lightgrey;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
@@ -376,8 +379,10 @@ ul li{
 }
 
 #icons_div>*:not(:first-child){
-	margin-left: 15px;
+	margin-left: 25px;
 }
+
+
 
 #icons_div>*:hover{
 	color:#897047;
@@ -386,7 +391,7 @@ ul li{
 
 #email_icon{
 	fill:#A8977A;
-	height: 20px;
+	height: 25px;
 }
 
 #email_icon:hover{
@@ -402,12 +407,14 @@ ul li{
 	text-align: center;
 	padding:5px;
 	margin-right: -25px;
-	width:230px;
-	margin-top: 10px;
+	width:290px;
+	cursor: pointer;
+	margin-top: 12px;
 }
 
+
 #wrong_email{
-	width:220px;
+	width:250px;
 	/*word-wrap: break-word;*/
 	margin-right: -20px;
 	font-size: 14px;
@@ -419,8 +426,12 @@ ul li{
 	height:20px;
 }
 
+#payment_icons_div>*{
+	cursor: pointer;
+}
+
 #payment_icons_div>*:not(:first-child){
-	margin-left: 15px;
+	margin-left: 20px;
 }
 
 .paymentIcon{
@@ -448,6 +459,7 @@ ul li{
 	.cloudTitle{
 		display: none;
 	}
+
 	#menu_icon{
 		display: flex;
 		align-items: center;
@@ -475,22 +487,38 @@ ul li{
    } 
 
    #mail_div h2{
-   	font-size: 20px;
+   	font-size: 21px;
    	text-align: center;
    }
 
-   #email{
-   	width:100% !important;
-   }
-
    #mail_input{
-   	width:85%;
+   	display: flex;
+   	justify-content: center;
    	box-sizing: border-box;
    	margin-right: 35px;
    }
 
    #mail_input>button{
-		right:-26px;
+		margin-left: -10px;
+		height:33px;
+	}
+
+	.emailLegend{
+		position:absolute;
+		left:15px;
+		top:3px;
+		color:grey;
+		background-color: white;
+		font-size: 12px;
+	}
+
+	#email_success{
+		margin-right: 0px;
+		width:290px;
+	}
+
+	#wrong_email{
+		margin-right: 0px;
 	}
 
 
@@ -534,7 +562,6 @@ ul li{
    	flex-direction: column;
    	align-items: center;
    	padding:10px 38px;
-
    }
 
 
@@ -620,7 +647,6 @@ ul li{
 
    #image_div>img{
    	width:750px;
-   	/*padding-left: 100px;*/
    	height:600px;
    	object-fit: cover;
    }
@@ -697,6 +723,7 @@ ul li{
 	}
 
    	body{
+
    		overflow-x: hidden;
 
    	}
@@ -752,23 +779,43 @@ ul li{
    }
 
    #email{
-   	width:100% !important;
+   	margin:auto;
    }
 
    #mail_input{
-   	width:45%;
    	box-sizing: border-box;
    	margin-right: 35px;
    }
 
    #mail_input>button{
 		right:-27px;
+		height: 33px;
+		top:0;
 	}
 
 
 	#mail_input>button:hover{
 		background-color: #897047;
 		color:white;
+	}
+
+	.emailLegend{
+		position:absolute;
+		left:15px;
+		top:-7px;
+		color:grey;
+		background-color: white;
+		font-size: 12px;
+	}
+
+	#email_success{
+		margin-top: 0px;
+		margin-right: 0px;
+		width:290px;
+	}
+
+	#wrong_email{
+		margin-right: 0;
 	}
 
    #delivery_properties>div{
@@ -846,7 +893,19 @@ ul li{
    }
 
    #footer>div>ul:first-child{
-		margin-bottom: 0px;
+		margin:4px  0;
+		padding: 4px 0;
+
+	}
+
+   #footer>div>ul{
+		margin:4px 0;
+		padding: 4px 0;
+	}
+
+	#footer>ul{
+		margin: 4px 0;
+		padding:4px 0 !important;
 	}
 
 	#footer>div{
@@ -1055,9 +1114,33 @@ ul li{
 		width:170px;
 		padding: 0 15px;
 	}
+
+	#footer{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding:20px 0;
+	box-sizing: border-box;
+	background-color: #F0EDE7;
+}
+
 }
 
 
+@media screen and (min-width: 1025px) and (max-width: 1080px){
+	#footer>*{
+		padding: 0 50px 0 66px;
+	}
+
+	#footer{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		padding:20px 0;
+		box-sizing: border-box;
+		background-color: #F0EDE7;
+	}
+}
 
 
 

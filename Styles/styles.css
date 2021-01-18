@@ -54,6 +54,7 @@ ul li{
 #header_wrapper_name{
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 #header_wrapper_icons{
@@ -64,6 +65,11 @@ ul li{
 #header_wrapper_icons>*{
 	padding: 2px 10px 0px 15px;
 	cursor: pointer;
+}
+
+#header_wrapper_icons>*:hover{
+	color:#897047;
+	transition-duration: 0.3s;
 }
 
 #header_wrapper_icons>*:not(:last-child){
@@ -474,6 +480,10 @@ ul li{
    	display: none;
    }
 
+   #header_wrapper{
+   	display: grid;
+   }
+
    #header_wrapper_icons>*:not(:last-child){
    	display: none;
    }
@@ -739,7 +749,7 @@ ul li{
    	#header_wrapper{
    		width:100%;
    		display: grid;
-   		grid-template-columns: 5% 80% 15%;
+   		grid-template-columns: 5% 90% 5%;
    		box-sizing: border-box;
    	}
 
@@ -755,6 +765,10 @@ ul li{
 
    #header_wrapper_icons>*{
    	display: none;
+   }
+
+   #header_wrapper_icons>*:hover{
+   	color:#897047;
    }
 
    .fa-heart-o{
@@ -905,11 +919,10 @@ ul li{
 
 	#footer>ul{
 		margin: 4px 0;
-		padding:4px 0 !important;
+		padding:4px 0 15px 0 !important;
 	}
 
 	#footer>div{
-		padding: 0;
 		width:100% !important;
 	}
 
